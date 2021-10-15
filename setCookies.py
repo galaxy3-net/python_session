@@ -4,7 +4,7 @@ import sys, requests, getopt
 
 print(sys.argv)
 try:
-    opts, args = getopt.getopt(sys.argv[1:], "l", ["location="])
+    opts, args = getopt.getopt(sys.argv[1:], "l:", ["location="])
 except getopt.GetoptError:
     print('script.py -l location')
     sys.exit(2)
