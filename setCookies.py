@@ -9,7 +9,7 @@ except getopt.GetoptError:
     print('script.py -l location')
     sys.exit(2)
 
-print("opts " + opts)
+print("opts ", opts)
 print("args " + args)
 for opt, arg in opts:
     print("opt " + opt + "\n")
