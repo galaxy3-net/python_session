@@ -29,4 +29,5 @@ cookieJAR.set("cookiecartItem", "laptop", domain="httpbin.org", path="/cookies")
 response = requests.get(setCookieURL,cookies=cookieJAR)
 print(response.text)
 
-
+response = requests.get(setCookieURL,cart=cookieJAR)
+print(response.text)
