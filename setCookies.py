@@ -18,7 +18,7 @@ cookieName = '1P_JAR'
 
 response = requests.get(setCookieURL)
 print('Request 2: response.cookees[' + cookieName + "]\n" +  response.cookies[cookieName])
-f.write(response.text)
+report.write(response.text)
 #print(response.text)
 print('Request 2: response.cookies' + "\n")
 print(response.cookies)
