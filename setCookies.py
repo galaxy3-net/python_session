@@ -8,7 +8,8 @@ cookies = {'location': 'Colorado'}
 
 response = requests.get(setCookieURL, cookies=cookies)
 print('Request 1: response.text' + "\n" +  response.text)
-print('Request 1: response.cookies' + "\n" +  response.cookies)
+print('Request 1: response.cookies' + "\n")
+print(response.cookies)
 
 setCookieURL = 'https://google.com'
 cookieName = '1P_JAR'
