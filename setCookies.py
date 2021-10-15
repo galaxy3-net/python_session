@@ -10,7 +10,7 @@ except getopt.GetoptError:
     sys.exit(2)
 
 print("opts ", opts)
-print("args " + args)
+print("args ", args)
 for opt, arg in opts:
     print("opt " + opt + "\n")
     print("arg " + arg + "\n")
