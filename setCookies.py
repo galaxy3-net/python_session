@@ -8,11 +8,15 @@ except getopt.GetoptError:
     print('script.py -l location')
     sys.exit(2)
 
+for opt, arg in opts:
+    if opt in ('-l', '--location'):
+        location = arg
+
 report =  open('output.txt', 'w')
 
 setCookieURL = "https://httpbin.org/cookies"
 
-cookies = {'location': 'Colorado'}
+cookies = {'location': location}
 
 response = requests.get(setCookieURL, cookies=cookies)
 print('Request 1: response.text' + "\n" +  response.text)
