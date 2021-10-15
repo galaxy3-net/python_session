@@ -2,15 +2,12 @@
 
 import sys, requests, getopt
 
-print(sys.argv)
 try:
     opts, args = getopt.getopt(sys.argv[1:], "l:", ["location="])
 except getopt.GetoptError:
     print('script.py -l location')
     sys.exit(2)
 
-print("opts ", opts)
-print("args ", args)
 for opt, arg in opts:
     print("opt " + opt + "\n")
     print("arg " + arg + "\n")
