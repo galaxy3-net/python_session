@@ -10,9 +10,11 @@ location = {'location': 'Colorado'}
 setCookieUrl = 'https://httpbin.org/cookies/set'
 getCookieUrl = 'https://httpbin.org/cookies'
 
-session.get(setCookieUrl, param=userName)
-session.get(setCookieUrl, param=location)
+session.get(setCookieUrl, params=userName)
+session.get(setCookieUrl, params=location)
 
 response = session.get(getCookieUrl)
 
 print(response.text)
+
+#  https://www.youtube.com/watch?v=8qsNauBEVNM
