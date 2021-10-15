@@ -24,6 +24,7 @@ cookies = {'location': location}
 cookieJAR = requests.cookies.RequestsCookieJar()
 cookieJAR.set("UserId", "JSmith101", domain="httpbin.org", path="/cookies")
 cookieJAR.set("cartItem", "laptop", domain="httpbin.org", path="/cart")
+cookieJAR.set("cookiecartItem", "laptop", domain="httpbin.org", path="/cookies")
 
 response = requests.get(setCookieURL,cookies=cookieJAR)
 print(response.text)
