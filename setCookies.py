@@ -12,7 +12,7 @@ except getopt.GetoptError:
 for opt, arg in opts:
     if opt in ("-l", "--location"):
         location = arg
-        print("location is " + location)
+        print("location is " + arg)
 
 report =  open('output.txt', 'w')
 
