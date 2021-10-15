@@ -2,6 +2,8 @@
 
 import requests
 
+report =  open('output.txt', 'w')
+
 setCookieURL = "https://httpbin.org/cookies"
 
 cookies = {'location': 'Colorado'}
@@ -16,6 +18,10 @@ cookieName = '1P_JAR'
 
 response = requests.get(setCookieURL)
 print('Request 2: response.cookees[' + cookieName + "]\n" +  response.cookies[cookieName])
+f.write(response.text)
 #print(response.text)
 print('Request 2: response.cookies' + "\n")
 print(response.cookies)
+
+report.close()
+
