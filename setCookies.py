@@ -10,6 +10,7 @@ except getopt.GetoptError:
     sys.exit(2)
 
 for opt, arg in opts:
+    print("opt " + opt + "\n")
     if opt in ("-l", "--location"):
         location = arg
         print("location is " + arg)
