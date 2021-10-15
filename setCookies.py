@@ -11,6 +11,7 @@ except getopt.GetoptError:
 
 for opt, arg in opts:
     print("opt " + opt + "\n")
+    print("arg " + arg + "\n")
     if opt in ("-l", "--location"):
         location = arg
         print("location is " + arg)
