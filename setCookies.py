@@ -2,7 +2,7 @@
 
 import requests
 
-report =  open('output.txt', 'w')
+report =  open('output.txt', 'a')
 
 setCookieURL = "https://httpbin.org/cookies"
 
