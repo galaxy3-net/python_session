@@ -1,6 +1,12 @@
 #!/usr/bin/python3
 
-import requests
+import sys, requests, getopt
+
+try:
+    opts, args = getopt.getopt(sys.argv[1:], "l", ["location="])
+except getopt.GetoptError:
+    print('script.py -l location')
+    sys.exit(2)
 
 report =  open('output.txt', 'w')
 
